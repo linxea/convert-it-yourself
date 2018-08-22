@@ -21,11 +21,13 @@ Only if you are using MacOS and you have `brew` installed (you really should).
 
 # Convert images to video (mov)
 
-### Using FFpmeg
+### Using FFmpeg
 
 - `./ffmpeg -framerate 10 -i ./images/*.png -vcodec png animate.mov`
 
 # Convert images to gif
+
+<img src="./gif/animate.gif" width="200">
 
 ### Using ImageMagick
 
@@ -33,19 +35,30 @@ Only if you are using MacOS and you have `brew` installed (you really should).
 
 # Convert gif to video (mp4)
 
-### Using FFpmeg
+[<img src="./images/0000.png" width="200">
+](./mp4/animate.mp4 "Click to Watch!")
+
+### Using FFmpeg
 
 - `./ffmpeg -i ./gif/animate.gif -f mp4 -pix_fmt yuv420p animate.mp4`
 
 # Convert mp4 to gif
 
-### Using FFpmeg
+<img src="./gif/animate.gif" width="200">
+
+### Using FFmpeg
 
 - `./ffmpeg -i animate.mp4 -f gif animate.gif`
 
 # Convert movie (mov) to images
 
-### Using FFpmeg
+<img src="./images/0000.png" width="100">
+<img src="./images/0001.png" width="100">
+<img src="./images/0002.png" width="100">
+<img src="./images/0003.png" width="100">
+<img src="./images/0004.png" width="100">
+
+### Using FFmpeg
 
 - `./ffmpeg -i animate.mov -f image2 image-\%d.png`
 
