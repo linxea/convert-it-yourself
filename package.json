@@ -1,5 +1,5 @@
 {
-  "name": "makeagif",
+  "name": "convert-it-yourself",
   "version": "1.0.0",
   "description": "Convert images to movie and gif using ImageMagick and FFmpeg",
   "scripts": {
