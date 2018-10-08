@@ -7,7 +7,7 @@
     "unzip": "unzip ffmpegDownload",
     "move": "mv ffmpeg-20180821-7e0df59-macos64-static/bin/ffmpeg ./",
     "remove": "rm ffmpegDownload.zip && rm -rf ffmpeg-20180821-7e0df59-macos64-static",
-    "convert:png:mov": "./ffmpeg -framerate 10 -i ./images/00%2d.png -vcodec png video/animate.mov",
+    "convert:png:mov": "./ffmpeg -framerate 10 -i ./images/image-%1d.png -vcodec png video/animate.mov",
     "convert:mov:mp4": "./ffmpeg -i video/animate.mov -vcodec h264 -acodec mp2 video/animate.mp4",
     "convert:png:gif": "convert -dispose previous -delay 10 -loop 0 ./images/*.png gif/animate.gif",
     "convert:gif:mp4": "./ffmpeg -i gif/animate.gif -f mp4 -pix_fmt yuv420p video/animate.mp4",
