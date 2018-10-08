@@ -23,7 +23,7 @@ Only if you are using MacOS and you have `brew` installed (you really should).
 
 ### Using FFmpeg
 
-- `./ffmpeg -framerate 10 -i ./images/*.png -vcodec png animate.mov`
+- `./ffmpeg -framerate 10 -i ./images/00%2d.png -vcodec png animate.mov`
 
 # Convert images to gif
 
@@ -61,6 +61,18 @@ Only if you are using MacOS and you have `brew` installed (you really should).
 ### Using FFmpeg
 
 - `./ffmpeg -i animate.mov -f image2 image-\%d.png`
+
+# Convert movie (mov) to movie (mp4)
+
+### Using FFmpeg
+
+- `./ffmpeg -i animate.mov -vcodec h264 -acodec mp2 animate.mp4`
+
+# Resize image/gif/video and keeping its aspect ratio
+
+### Using FFmpeg
+
+- `./ffmpeg -i animate.gif -vf scale=500:-1 animate-500px.gif`
 
 # Notes
 

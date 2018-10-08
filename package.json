@@ -6,7 +6,9 @@
     "download": "brew install ImageMagick && curl https://ffmpeg.zeranoe.com/builds/macos64/static/ffmpeg-20180821-7e0df59-macos64-static.zip -o ffmpegDownload.zip && npm run unzip && npm run move && npm run remove",
     "unzip": "unzip ffmpegDownload",
     "move": "mv ffmpeg-20180821-7e0df59-macos64-static/bin/ffmpeg ./",
-    "remove": "rm ffmpegDownload.zip && rm -rf ffmpeg-20180821-7e0df59-macos64-static"
+    "remove": "rm ffmpegDownload.zip && rm -rf ffmpeg-20180821-7e0df59-macos64-static",
+    "convert:png:mov": "./ffmpeg -framerate 10 -i ./images/00%2d.png -vcodec png video/animate.mov",
+    "convert:mov:mp4": "./ffmpeg -i video/animate.mov -vcodec h264 -acodec mp2 video/animate.mp4"
   },
   "author": "toomuchome <toomuchome@gmail.com> (toomuchome.com)",
   "license": "MIT"
