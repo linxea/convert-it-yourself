@@ -52,11 +52,13 @@ Only if you are using MacOS and you have `brew` installed (you really should).
 
 # Convert movie (mov) to images
 
+<div style="display:flex;flex-direction:column">
 <img src="./images/0000.png" width="100">
 <img src="./images/0001.png" width="100">
 <img src="./images/0002.png" width="100">
 <img src="./images/0003.png" width="100">
 <img src="./images/0004.png" width="100">
+</div>
 
 ### Using FFmpeg
 
