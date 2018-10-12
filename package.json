@@ -15,6 +15,6 @@
     "convert:mov:png": "./ffmpeg -i video/animate.mov -f image2 images/image-%d.png",
     "resize:gif": "./ffmpeg -i gif/animate.gif -vf scale=500:-1 gif/animate-500px.gif"
   },
-  "author": "toomuchome <toomuchome@gmail.com> (toomuchome.com)",
+  "author": "linxea <linxea.linxea@gmail.com> (toomuchome.com)",
   "license": "MIT"
 }
