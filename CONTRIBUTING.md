@@ -5,6 +5,6 @@
 - [x] Be nice
 - [x] Add new commands to convert stuff or try to make it easier to use because right now everything is semi-manual :(
 
-## Enjoy, no rules no anything
+## Rules
 
-- [x] Just be nice, kthxbye
+- [x] Be nice, kthxbye
