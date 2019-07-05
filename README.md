@@ -36,7 +36,7 @@ Only if you are using MacOS and you have `brew` installed (you really should).
 # Convert gif to video (mp4)
 
 [<img src="./images/image-1.png" width="200">
-](./mp4/animate.mp4 "Click to Watch!")
+](./video/animate.mp4 "Click to Watch!")
 
 ### Using FFmpeg
 
